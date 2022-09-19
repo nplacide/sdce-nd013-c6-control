@@ -11,24 +11,33 @@ class PID {
 public:
 
    /**
-   * TODO: Create the PID class
+   * Create the PID class
    **/
 
     /*
     * Errors
     */
+   double prev_cte;
+   double diff_cte;
+   double int_cte;
 
     /*
     * Coefficients
     */
+   double kpi;
+   double kii;
+   double kdi;
 
     /*
     * Output limits
     */
+   double output_lim_min;
+   double output_lim_max;
   
     /*
     * Delta time
     */
+   double delta_time;
 
     /*
     * Constructor
